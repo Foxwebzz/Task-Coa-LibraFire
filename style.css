@@ -362,3 +362,27 @@ form {
     padding: 20px;
     border-radius: 20px 0 20px 0;
 }
+
+
+/* slider */
+.slick-slide { height: 600px !important; }
+
+.slick-dots {
+    display: flex!important;
+    flex-direction: column!important;
+    position: absolute!important;
+    top: 250px!important;
+    left: 20px;
+}
+.slick-dots li button:before {
+    content: '_'!important;
+    font-size: 60px!important;
+    color: #1aa7ec!important;
+}
+
+#slick-slide01 button:before {
+    content: '__'!important;
+}
+#slick-slide02 button:before {
+    content: '___'!important;
+}

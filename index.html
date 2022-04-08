@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <title>TASK LIBRAFIRE</title>
 </head>
 <body>
@@ -27,12 +29,27 @@
     </nav>
 
     <div class="container">
-        <section class="heromain-section">
-            <div class="heromain-overlay-right">
-                <h1>FMCG<br>Engineering</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia itaque reprehenderit ex, numquam possimus fugit inventore labore tenetur perspiciatis, illum sequi repellat.</p>
-            </div>
-        </section>
+        <div class="slider">
+            <section class="heromain-section">
+                <div class="heromain-overlay-right">
+                    <h1>FMCG<br>Engineering</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia itaque reprehenderit ex, numquam possimus fugit inventore labore tenetur perspiciatis, illum sequi repellat.</p>
+                </div>
+            </section>
+            <section class="heromain-section">
+                <div class="heromain-overlay-right">
+                    <h1>FMCG<br>Engineering</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia itaque reprehenderit ex, numquam possimus fugit inventore labore tenetur perspiciatis, illum sequi repellat.</p>
+                </div>
+            </section>
+            <section class="heromain-section">
+                <div class="heromain-overlay-right">
+                    <h1>FMCG<br>Engineering</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia itaque reprehenderit ex, numquam possimus fugit inventore labore tenetur perspiciatis, illum sequi repellat.</p>
+                </div>
+            </section>
+
+        </div>
     </div>
 
     <section class="services-section">
@@ -212,5 +229,16 @@
         </div>
     </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+    </script>
 </body>
 </html>
