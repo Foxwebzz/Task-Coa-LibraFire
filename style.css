@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* navigation */
+.navigation-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.navigation-right-side {
+    display: flex;
+    align-items: center;
+}
+.navigation-ul {
+    display: flex;
+    margin-right: 30px;
+}
+.navigation-ul li {
+    margin-left: 20px;
+}
+.navigation-ul li a {
+    color: #000;
+}
+
+.navigation-button {
+    background-color: #1aa7ec;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px 0 20px 0;
+    color: #fff;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+
+/* herosection */
+.heromain-section {
+    background-image: url('./images/main-section.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 100px 0 0 0 ;
+    position: relative;
+}
+.heromain-overlay-right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.4);
+    border-radius: 100px 0 0 0 ;
+    color: #fff;
+    padding: 0 50px;
+}
+.heromain-overlay-right h1{
+    font-size: 60px;
+    font-weight: 00;
+}
+.heromain-overlay-right p{
+    margin-top: 20px;
+    max-width: 400px;
+    line-height: 30px;
+}
