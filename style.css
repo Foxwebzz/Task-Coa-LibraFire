@@ -47,6 +47,7 @@ body {
     color: #fff;
     font-family: inherit;
     font-size: 18px;
+    cursor: pointer;
 }
 
 
@@ -80,5 +81,94 @@ body {
 .heromain-overlay-right p{
     margin-top: 20px;
     max-width: 400px;
+    line-height: 26px;
+}
+
+
+/* services section */
+.services-section {
+    margin: 100px 0;
+}
+.services-section .container {
+    padding: 0 60px;
+}
+.services-section  h2 {
+    font-size: 36px;
+    font-weight: 400;
     line-height: 30px;
+}
+.services-section  p {
+    margin-top: 20px;
+    max-width: 400px;
+    line-height: 26px;
+    color: #777;
+}
+.services-blocks {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.service-block {
+    box-shadow: 0 0 9px #ddd;
+    height: 600px;
+    width: 300px;
+    border-radius: 60px 0 60px 0;
+    position: relative;
+    text-align: center;
+    padding: 22px;
+    padding-top: 40px;
+}
+.num {
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 10px 15px;
+   background-color: #1aa7ec; 
+   border-radius: 0 0 0 20px;
+   color: #fff;
+}
+.services-block img {
+    width: 100px;
+}
+
+.services-block-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.services-block-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.services-ul {
+    margin-top: 20px;
+}
+.services-ul li{
+    margin-bottom: 15px;
+    color: #777;
+}
+.services-ul li::before {
+    content: "\2022";
+    color: #1aa7ec;
+    display: inline-block; 
+    font-weight: bold;
+    margin-right: 10px;
+}
+.services-block-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    width: 240px;
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #1aa7ec;
+    border-radius: 20px 0 20px 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
 }
