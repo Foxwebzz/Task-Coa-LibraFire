@@ -74,9 +74,7 @@ body {
 
 
 /* herosection */
-.heromain-slide-section {
-    display: none;
-}
+
 .heromain-section {
     background-image: url('./images/main-section.jpg');
     background-position: center;
@@ -270,7 +268,6 @@ textarea::placeholder {
     padding: 5px 10px;
     font-size: 16px;
     color: #fff;
-    transform: rotate(180deg);
 }
 textarea {
     width: 100%;
@@ -342,7 +339,7 @@ form {
 }
 .footer-section-big-block {
     margin-bottom: 30px;
-    width: 500px;
+    max-width: 500px;
 }
 .footer-section-big-block h3 {
     color: #777;
@@ -408,6 +405,9 @@ form {
 }
 
 @media(max-width: 890px) {
+    .heromain-overlay-right {
+        width: 100%;
+    }
     .navigation-right-side {
         display: none;
     }
@@ -433,5 +433,23 @@ form {
         height: 2px;
         width: 30px;
         border: 1px solid red;
+    }
+}
+
+@media(max-width: 580px) {
+    form {
+        width: 100%;
+    }
+    .footer-section-flex {
+        flex-direction: column;
+    } 
+    .contact-form-inputs-block {
+        flex-direction: column;
+    }
+    .contact-section .container {
+        padding: 50px 10px;
+    }
+    .heromain-overlay-right h1 {
+        font-size: 36px;
     }
 }
