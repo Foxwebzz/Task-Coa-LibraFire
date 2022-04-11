@@ -367,6 +367,7 @@ form {
 .footer-section-flex {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-section-second {
@@ -408,31 +409,61 @@ form {
     .heromain-overlay-right {
         width: 100%;
     }
-    .navigation-right-side {
+
+    .navigation-button {
         display: none;
     }
+    .navigation-right-side {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: -200px;
+        height: 100%;
+        transition: 0.3s ease;
+    }
+    .navigation-ul {
+        flex-direction: column;
+        /* position: absolute;
+        top: 0;
+        left: -200px; */
+        width: 200px;
+        height: 100%;
+        z-index: 10;
+        background-color: #1aa7ec;
+        transition: 0.3s ease;
+    }
+    .navigation-ul li  {
+        margin-bottom: 20px;
+    }
+    .navigation-ul li a {
+        color: #fff;
+    }
+
     .hamburger-custom {
         display: block;
         cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 30px;
     }
     .ham1 {
         height: 2px;
         width: 40px;
-        border: 1px solid red;
+        border: 1px solid #1aa7ec;
         margin-bottom: 5px;
         transition: 0.3s ease;
     }
     .ham2 {
         height: 2px;
         width: 40px;
-        border: 1px solid red;
+        border: 1px solid #1aa7ec;
         margin-bottom: 5px;
         transition: 0.3s ease;
     }
     .ham3 {
         height: 2px;
         width: 30px;
-        border: 1px solid red;
+        border: 1px solid #1aa7ec;
     }
 }
 
