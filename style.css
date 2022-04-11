@@ -34,6 +34,9 @@ body {
     display: flex;
     align-items: center;
 }
+.hamburger-custom  {
+    display: none;
+}
 .navigation-ul {
     display: flex;
     margin-right: 30px;
@@ -71,6 +74,9 @@ body {
 
 
 /* herosection */
+.heromain-slide-section {
+    display: none;
+}
 .heromain-section {
     background-image: url('./images/main-section.jpg');
     background-position: center;
@@ -79,6 +85,7 @@ body {
     height: 600px;
     border-radius: 100px 0 0 0 ;
     position: relative;
+    overflow: hidden;
 }
 .heromain-overlay-right {
     position: absolute;
@@ -188,8 +195,8 @@ body {
     font-weight: bold;
     margin-right: 10px;
 }
+
 .services-block-btn {
-    width: 100%;
     border: none;
     padding: 10px;
     background-color: #1aa7ec;
@@ -198,7 +205,13 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 30px;
+    width: 90%;
 }
+
 .services-block-btn:hover {
     background-color: #314047;
 }
@@ -210,7 +223,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    min-height: 400px;
     color: #fff;
     position: relative;
 }
@@ -257,6 +270,7 @@ textarea::placeholder {
     padding: 5px 10px;
     font-size: 16px;
     color: #fff;
+    transform: rotate(180deg);
 }
 textarea {
     width: 100%;
@@ -298,11 +312,12 @@ form {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 .footer-block {
     display: inline-block;
-    width: 200px;
+    max-width: 200px;
     margin-bottom: 30px;
 }
 .footer-block h3{
@@ -376,6 +391,47 @@ form {
     position: absolute;
     align-items: flex-start;
     top: 250px;
-    left: 20px;
 }
 
+
+
+
+/* responsive */
+@media(max-width: 1305px) {
+    .contact-section .container {
+        flex-direction: column;
+    }
+    form {
+        width: 50%;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 890px) {
+    .navigation-right-side {
+        display: none;
+    }
+    .hamburger-custom {
+        display: block;
+        cursor: pointer;
+    }
+    .ham1 {
+        height: 2px;
+        width: 40px;
+        border: 1px solid red;
+        margin-bottom: 5px;
+        transition: 0.3s ease;
+    }
+    .ham2 {
+        height: 2px;
+        width: 40px;
+        border: 1px solid red;
+        margin-bottom: 5px;
+        transition: 0.3s ease;
+    }
+    .ham3 {
+        height: 2px;
+        width: 30px;
+        border: 1px solid red;
+    }
+}
