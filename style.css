@@ -12,8 +12,14 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1570px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+.container-small {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -22,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 .navigation-right-side {
     display: flex;
@@ -60,7 +66,7 @@ body {
     transition: 0.3s ease;
 }
 .navigation-button:hover {
-    transform: scale(1.1);
+    background-color: #314047;
 }
 
 
@@ -119,7 +125,9 @@ body {
 .services-blocks {
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 .service-block {
     box-shadow: 0 0 9px #ddd;
@@ -181,12 +189,7 @@ body {
     margin-right: 10px;
 }
 .services-block-btn {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    right: 10px;
-    max-width: 240px;
-    margin: 20px;
+    width: 100%;
     border: none;
     padding: 10px;
     background-color: #1aa7ec;
@@ -197,7 +200,7 @@ body {
     transition: 0.3s ease;
 }
 .services-block-btn:hover {
-    transform: scale(0.9);
+    background-color: #314047;
 }
 
 
@@ -283,7 +286,7 @@ form {
     transition: 0.3s ease;
 }
 .contact-send-btn:hover {
-    transform: scale(1.1);
+    background-color: #314047;
 }
 
 /* footer section */
@@ -344,10 +347,10 @@ form {
     margin-bottom: 10px;
     transition: 0.3s;
     cursor: pointer;
+    padding-left: 10px;
 }
 .footer-big-block-content ul li:hover {
-    margin-left: 10px;
-
+    transform: translateX(10px);
 }
 .footer-section-flex {
     display: flex;
@@ -365,24 +368,14 @@ form {
 
 
 /* slider */
-.slick-slide { height: 600px !important; }
+.slick-slide { height: 600px ; }
 
 .slick-dots {
-    display: flex!important;
-    flex-direction: column!important;
-    position: absolute!important;
-    top: 250px!important;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top: 250px;
     left: 20px;
 }
-.slick-dots li button:before {
-    content: '_'!important;
-    font-size: 60px!important;
-    color: #1aa7ec!important;
-}
 
-#slick-slide01 button:before {
-    content: '__'!important;
-}
-#slick-slide02 button:before {
-    content: '___'!important;
-}
